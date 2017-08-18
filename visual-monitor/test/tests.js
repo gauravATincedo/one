@@ -4,8 +4,8 @@ var shoovWebdrivercss = require('shoov-webdrivercss');
 
 // This can be executed by passing the environment argument like this:
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=chrome mocha
-// PROVIDER_PREFIX=browserstack SELECTED_CAPS=ie11 mocha
-// PROVIDER_PREFIX=browserstack SELECTED_CAPS=iphone5 mocha
+
+// Created by Gaurav Verma for demonstartion to cover Chrome ver 60 on mac and comparing with a progressive version
 
 var capsConfig = {
  'chrome': {
@@ -15,11 +15,38 @@ var capsConfig = {
    'os_version' : 'Yosemite',
    'resolution' : '1024x768'
  },
- 'ie11': {
-   'browser' : 'IE',
-   'browser_version' : '11.0',
+ 'chrome_win': {
+   'browser' : 'Chrome',
+   'browser_version' : '59.0',
    'os' : 'Windows',
-   'os_version' : '7',
+   'os_version' : '10'
+ },
+ 'firefox': {
+   'browser' : 'Firefox',
+   'browser_version' : '55.0',
+   'os' : 'Windows',
+   'os_version' : '10',
+   'resolution' : '1024x768'
+ },
+ 'ie11': {
+   'browser' : 'Edge',
+   'browser_version' : '15',
+   'os' : 'Windows',
+   'os_version' : '10',
+   'resolution' : '1024x768'
+ },
+ 'mac': {
+   'browser' : 'Chrome',
+   'browser_version' : '59.0',
+   'os' : 'OS X',
+   'os_version' : 'Sierra',
+   'resolution' : '1024x768'
+ },
+ 'windows': {
+   'browser' : 'Edge',
+   'browser_version' : '15.0',
+   'os' : 'Windows',
+   'os_version' : '10',
    'resolution' : '1024x768'
  },
  'iphone5': {
